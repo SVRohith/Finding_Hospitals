@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun May 23 19:34:08 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>90 seconds (90782 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td>regression </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCaseHospitalSearch.AllFiltersFunctionalityCheck.allFiltersFunctionality()'><b>allFiltersFunctionality</b><br>Test class: testCaseHospitalSearch.AllFiltersFunctionalityCheck</td>
+<td></td>
+<td>0</td>
+<td>testCaseHospitalSearch.AllFiltersFunctionalityCheck@36546a22</td></tr>
+<tr>
+<td title='testCaseCorporateWellnessPage.SelectCorporateWellnessOptionTest.corporateWellnessFunctionalityTest()'><b>corporateWellnessFunctionalityTest</b><br>Test class: testCaseCorporateWellnessPage.SelectCorporateWellnessOptionTest</td>
+<td></td>
+<td>3</td>
+<td>testCaseCorporateWellnessPage.SelectCorporateWellnessOptionTest@5b40ceb</td></tr>
+<tr>
+<td title='testCaseDiagnosticsPage.DiagnosticsOptionClickTest.diagnosticsButtonClickTest()'><b>diagnosticsButtonClickTest</b><br>Test class: testCaseDiagnosticsPage.DiagnosticsOptionClickTest</td>
+<td></td>
+<td>3</td>
+<td>testCaseDiagnosticsPage.DiagnosticsOptionClickTest@13c3c1e1</td></tr>
+<tr>
+<td title='testCaseHospitalSearch.FiltersSectionVisibilityCheck.filtersSectionVisibilityTest()'><b>filtersSectionVisibilityTest</b><br>Test class: testCaseHospitalSearch.FiltersSectionVisibilityCheck</td>
+<td></td>
+<td>0</td>
+<td>testCaseHospitalSearch.FiltersSectionVisibilityCheck@285c08c8</td></tr>
+<tr>
+<td title='testCaseCorporateWellnessPage.ForProvidersFunctionalityTest.forProvidersFunctionalityTest()'><b>forProvidersFunctionalityTest</b><br>Test class: testCaseCorporateWellnessPage.ForProvidersFunctionalityTest</td>
+<td></td>
+<td>0</td>
+<td>testCaseCorporateWellnessPage.ForProvidersFunctionalityTest@3f053c80</td></tr>
+<tr>
+<td title='testCaseHomePage.LocationSearchClickTest.locationSearchClickTest()'><b>locationSearchClickTest</b><br>Test class: testCaseHomePage.LocationSearchClickTest</td>
+<td></td>
+<td>0</td>
+<td>testCaseHomePage.LocationSearchClickTest@1e63ec0b</td></tr>
+<tr>
+<td title='testCaseCorporateWellnessPage.OrganizationSizeDropDownFunctionalityTest.organizationSizeDropDownFunctionalityTest()'><b>organizationSizeDropDownFunctionalityTest</b><br>Test class: testCaseCorporateWellnessPage.OrganizationSizeDropDownFunctionalityTest</td>
+<td></td>
+<td>4</td>
+<td>testCaseCorporateWellnessPage.OrganizationSizeDropDownFunctionalityTest@6c6c5427</td></tr>
+<tr>
+<td title='testCaseCorporateWellnessPage.ScheduleADemoButtonFunctionalityTest.scheduleButtonFunctionalityTest()'><b>scheduleButtonFunctionalityTest</b><br>Test class: testCaseCorporateWellnessPage.ScheduleADemoButtonFunctionalityTest</td>
+<td></td>
+<td>4</td>
+<td>testCaseCorporateWellnessPage.ScheduleADemoButtonFunctionalityTest@618c5d94</td></tr>
+<tr>
+<td title='testCaseHomePage.SearchBoxFunctionalityTest.searchBoxTest()'><b>searchBoxTest</b><br>Test class: testCaseHomePage.SearchBoxFunctionalityTest</td>
+<td></td>
+<td>5</td>
+<td>testCaseHomePage.SearchBoxFunctionalityTest@3b956878</td></tr>
+<tr>
+<td title='testCaseDiagnosticsPage.DiagnosticsPageSearchBoxClickTest.selectCitySearchBoxClickTest()'><b>selectCitySearchBoxClickTest</b><br>Test class: testCaseDiagnosticsPage.DiagnosticsPageSearchBoxClickTest</td>
+<td></td>
+<td>3</td>
+<td>testCaseDiagnosticsPage.DiagnosticsPageSearchBoxClickTest@1d8062d2</td></tr>
+</table><p>
+</body>
+</html>

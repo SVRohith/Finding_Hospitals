@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\irohi\eclipse-workspace\Finding_Hospitals\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseHospitalSearch.AllFiltersFunctionalityCheck" class="method navigator-link" hash-for-method="allFiltersFunctionality">allFiltersFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseCorporateWellnessPage.SelectCorporateWellnessOptionTest" class="method navigator-link" hash-for-method="corporateWellnessFunctionalityTest">corporateWellnessFunctionalityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseDiagnosticsPage.DiagnosticsOptionClickTest" class="method navigator-link" hash-for-method="diagnosticsButtonClickTest">diagnosticsButtonClickTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseHospitalSearch.FiltersSectionVisibilityCheck" class="method navigator-link" hash-for-method="filtersSectionVisibilityTest">filtersSectionVisibilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseCorporateWellnessPage.ForProvidersFunctionalityTest" class="method navigator-link" hash-for-method="forProvidersFunctionalityTest">forProvidersFunctionalityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseHomePage.LocationSearchClickTest" class="method navigator-link" hash-for-method="locationSearchClickTest">locationSearchClickTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseCorporateWellnessPage.OrganizationSizeDropDownFunctionalityTest" class="method navigator-link" hash-for-method="organizationSizeDropDownFunctionalityTest">organizationSizeDropDownFunctionalityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseCorporateWellnessPage.ScheduleADemoButtonFunctionalityTest" class="method navigator-link" hash-for-method="scheduleButtonFunctionalityTest">scheduleButtonFunctionalityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseHomePage.SearchBoxFunctionalityTest" class="method navigator-link" hash-for-method="searchBoxTest">searchBoxTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCaseDiagnosticsPage.DiagnosticsPageSearchBoxClickTest" class="method navigator-link" hash-for-method="selectCitySearchBoxClickTest">selectCitySearchBoxClickTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseDiagnosticsPage.DiagnosticsOptionClickTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="diagnosticsButtonClickTest">
+                  </a> <!-- diagnosticsButtonClickTest -->
+                  <span class="method-name">diagnosticsButtonClickTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseHospitalSearch.FiltersSectionVisibilityCheck</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filtersSectionVisibilityTest">
+                  </a> <!-- filtersSectionVisibilityTest -->
+                  <span class="method-name">filtersSectionVisibilityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseCorporateWellnessPage.SelectCorporateWellnessOptionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="corporateWellnessFunctionalityTest">
+                  </a> <!-- corporateWellnessFunctionalityTest -->
+                  <span class="method-name">corporateWellnessFunctionalityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseCorporateWellnessPage.ForProvidersFunctionalityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="forProvidersFunctionalityTest">
+                  </a> <!-- forProvidersFunctionalityTest -->
+                  <span class="method-name">forProvidersFunctionalityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseHomePage.SearchBoxFunctionalityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchBoxTest">
+                  </a> <!-- searchBoxTest -->
+                  <span class="method-name">searchBoxTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseCorporateWellnessPage.OrganizationSizeDropDownFunctionalityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="organizationSizeDropDownFunctionalityTest">
+                  </a> <!-- organizationSizeDropDownFunctionalityTest -->
+                  <span class="method-name">organizationSizeDropDownFunctionalityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseDiagnosticsPage.DiagnosticsPageSearchBoxClickTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectCitySearchBoxClickTest">
+                  </a> <!-- selectCitySearchBoxClickTest -->
+                  <span class="method-name">selectCitySearchBoxClickTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseHomePage.LocationSearchClickTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="locationSearchClickTest">
+                  </a> <!-- locationSearchClickTest -->
+                  <span class="method-name">locationSearchClickTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseCorporateWellnessPage.ScheduleADemoButtonFunctionalityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="scheduleButtonFunctionalityTest">
+                  </a> <!-- scheduleButtonFunctionalityTest -->
+                  <span class="method-name">scheduleButtonFunctionalityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCaseHospitalSearch.AllFiltersFunctionalityCheck</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allFiltersFunctionality">
+                  </a> <!-- allFiltersFunctionality -->
+                  <span class="method-name">allFiltersFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\irohi\eclipse-workspace\Finding_Hospitals\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;exclude name=&quot;regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;testCaseCorporateWellnessPage&quot;/&gt;
+      &lt;package name=&quot;testCaseDiagnosticsPage&quot;/&gt;
+      &lt;package name=&quot;testCaseHomePage&quot;/&gt;
+      &lt;package name=&quot;testCaseHospitalSearch&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCaseCorporateWellnessPage.CorporateWellnessWithEmptyNameTest&quot;/&gt;
+      &lt;class name=&quot;testCaseCorporateWellnessPage.CorporateWellnessWithEmptyOrgSizeTest&quot;/&gt;
+      &lt;class name=&quot;testCaseCorporateWellnessPage.CorporateWellnessWithInvalidDetailsTest&quot;/&gt;
+      &lt;class name=&quot;testCaseCorporateWellnessPage.CorporateWellnessWithValidDetailsTest&quot;/&gt;
+      &lt;class name=&quot;testCaseCorporateWellnessPage.ForProvidersFunctionalityTest&quot;/&gt;
+      &lt;class name=&quot;testCaseCorporateWellnessPage.OrganizationSizeDropDownFunctionalityTest&quot;/&gt;
+      &lt;class name=&quot;testCaseCorporateWellnessPage.ScheduleADemoButtonFunctionalityTest&quot;/&gt;
+      &lt;class name=&quot;testCaseCorporateWellnessPage.SelectCorporateWellnessOptionTest&quot;/&gt;
+      &lt;class name=&quot;testCaseDiagnosticsPage.DiagnosticsOptionClickTest&quot;/&gt;
+      &lt;class name=&quot;testCaseDiagnosticsPage.DiagnosticsPageSearchBoxClickTest&quot;/&gt;
+      &lt;class name=&quot;testCaseDiagnosticsPage.DisplayTopCitiesTest&quot;/&gt;
+      &lt;class name=&quot;testCaseDiagnosticsPage.SelectTopCityTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.LocationSearchClearTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.LocationSearchClickTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.LocationSearchFunctionalityTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.SearchBoxClearTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.SearchBoxClickTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.SearchBoxFunctionalityTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.SearchBoxSuggestionTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.SearchInEntireCityTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.SuggestionLocationCheckTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHomePage.UseMyLocationTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHospitalSearch.AllFiltersFunctionalityCheck&quot;/&gt;
+      &lt;class name=&quot;testCaseHospitalSearch.FiltersFunctionalityTest&quot;/&gt;
+      &lt;class name=&quot;testCaseHospitalSearch.FiltersSectionVisibilityCheck&quot;/&gt;
+      &lt;class name=&quot;testCaseHospitalSearch.ResetFiltersCheck&quot;/&gt;
+      &lt;class name=&quot;testCaseHospitalSearch.SearchHospitalsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (27 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">allFiltersFunctionality</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">corporateWellnessFunctionalityTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">diagnosticsButtonClickTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filtersSectionVisibilityTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">forProvidersFunctionalityTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">locationSearchClickTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">organizationSizeDropDownFunctionalityTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">scheduleButtonFunctionalityTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchBoxTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">selectCitySearchBoxClickTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchBoxTest')
+data.setCell(0, 2, 'testCaseHomePage.SearchBoxFunctionalityTest')
+data.setCell(0, 3, 5870);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'scheduleButtonFunctionalityTest')
+data.setCell(1, 2, 'testCaseCorporateWellnessPage.ScheduleADemoButtonFunctionalityTest')
+data.setCell(1, 3, 4058);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'organizationSizeDropDownFunctionalityTest')
+data.setCell(2, 2, 'testCaseCorporateWellnessPage.OrganizationSizeDropDownFunctionalityTest')
+data.setCell(2, 3, 4032);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'corporateWellnessFunctionalityTest')
+data.setCell(3, 2, 'testCaseCorporateWellnessPage.SelectCorporateWellnessOptionTest')
+data.setCell(3, 3, 3819);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'selectCitySearchBoxClickTest')
+data.setCell(4, 2, 'testCaseDiagnosticsPage.DiagnosticsPageSearchBoxClickTest')
+data.setCell(4, 3, 3719);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'diagnosticsButtonClickTest')
+data.setCell(5, 2, 'testCaseDiagnosticsPage.DiagnosticsOptionClickTest')
+data.setCell(5, 3, 3159);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'locationSearchClickTest')
+data.setCell(6, 2, 'testCaseHomePage.LocationSearchClickTest')
+data.setCell(6, 3, 487);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'allFiltersFunctionality')
+data.setCell(7, 2, 'testCaseHospitalSearch.AllFiltersFunctionalityCheck')
+data.setCell(7, 3, 354);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'forProvidersFunctionalityTest')
+data.setCell(8, 2, 'testCaseCorporateWellnessPage.ForProvidersFunctionalityTest')
+data.setCell(8, 3, 123);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'filtersSectionVisibilityTest')
+data.setCell(9, 2, 'testCaseHospitalSearch.FiltersSectionVisibilityCheck')
+data.setCell(9, 3, 56);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">23 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHomePage.LocationSearchClearTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">locationSearchClearTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHomePage.UseMyLocationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">useMyLocationTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHomePage.SearchInEntireCityTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">searchInEntireCityTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseCorporateWellnessPage.CorporateWellnessWithEmptyOrgSizeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">EmptyOrgSizeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHospitalSearch.ResetFiltersCheck</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">resetFiltersFunctionality</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHomePage.SearchBoxClickTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">searchBoxClickTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseCorporateWellnessPage.CorporateWellnessWithInvalidDetailsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">InvalidTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHomePage.SuggestionLocationCheckTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">suggestionLocationCheckTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseDiagnosticsPage.DisplayTopCitiesTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">displayTopCitiesTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseCorporateWellnessPage.CorporateWellnessWithValidDetailsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ValidDetailsTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHomePage.SearchBoxClearTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">searchBoxClearTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseCorporateWellnessPage.CorporateWellnessWithEmptyNameTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">EmptyNameTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHospitalSearch.FiltersFunctionalityTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">onlineBookingFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">accreditedFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">pharmacy24x7Functionality</span>
+                <br/>
+                <span class="ignored-method-name">diagnosticLabServicesFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">open24x7Functionality</span>
+                <br/>
+                <span class="ignored-method-name">hasParkingFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">cafeteriaFunctionality</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHospitalSearch.SearchHospitalsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">highRatingHospitalsTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHomePage.LocationSearchFunctionalityTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">locationSearchTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseHomePage.SearchBoxSuggestionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">suggestionCheckTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCaseDiagnosticsPage.SelectTopCityTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">selectTopCityTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseDiagnosticsPage.DiagnosticsOptionClickTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">diagnosticsButtonClickTest</span>
+                <span class="method-start">4968 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">8131 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseHospitalSearch.AllFiltersFunctionalityCheck</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">10456 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">allFiltersFunctionality</span>
+                <span class="method-start">21575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">21933 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseDiagnosticsPage.DiagnosticsPageSearchBoxClickTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">23682 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectCitySearchBoxClickTest</span>
+                <span class="method-start">27236 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">30956 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseHomePage.LocationSearchClickTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">32791 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">locationSearchClickTest</span>
+                <span class="method-start">36369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">36857 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseHospitalSearch.FiltersSectionVisibilityCheck</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">37791 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">filtersSectionVisibilityTest</span>
+                <span class="method-start">46610 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">46667 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseCorporateWellnessPage.ForProvidersFunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">47876 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forProvidersFunctionalityTest</span>
+                <span class="method-start">53008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">53133 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseCorporateWellnessPage.OrganizationSizeDropDownFunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">54324 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">organizationSizeDropDownFunctionalityTest</span>
+                <span class="method-start">57923 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">61957 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseHomePage.SearchBoxFunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">62944 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchBoxTest</span>
+                <span class="method-start">66816 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">72687 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseCorporateWellnessPage.ScheduleADemoButtonFunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">73494 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">scheduleButtonFunctionalityTest</span>
+                <span class="method-start">77257 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">81317 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCaseCorporateWellnessPage.SelectCorporateWellnessOptionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">82130 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">corporateWellnessFunctionalityTest</span>
+                <span class="method-start">85963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">89785 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
